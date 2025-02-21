@@ -204,14 +204,17 @@ const UserManagement = () => {
             <Button
               icon={<IoIosSave />}
               type="primary"
-              className={"!px-1 !py-1 "}
+              className={"!px-1 !py-1 !mb-0"}
               onClick={() => handleUpdate(record.id)}
             />
             <Popconfirm title="Sure to cancel?" onConfirm={cancel}>
               <Button
                 icon={<MdCancel />}
                 type="primary"
-                className={"!px-1 !py-1 bg-red-600"}
+                className={"!px-1 !py-1 !mb-0"}
+                style={{
+                  backgroundColor: "red",
+                }}
               />
             </Popconfirm>
           </Space>
@@ -220,7 +223,7 @@ const UserManagement = () => {
             <Button
               icon={<MdModeEditOutline />}
               type="primary"
-              className={"!px-1 !py-1 "}
+              className={"!px-1 !py-1 !mb-0"}
               disabled={editingKey !== ""}
               onClick={() => edit(record)}
             ></Button>
@@ -236,7 +239,10 @@ const UserManagement = () => {
                 icon={<RiDeleteBin7Fill />}
                 type="primary"
                 disabled={editingKey !== ""}
-                className={`!px-1 !py-1 ${editingKey === "" && "bg-red-600"}`}
+                className={`!px-1 !py-1 !mb-0`}
+                style={{
+                  backgroundColor: editingKey === "" && "red",
+                }}
               ></Button>
             </Popconfirm>
           </Space>

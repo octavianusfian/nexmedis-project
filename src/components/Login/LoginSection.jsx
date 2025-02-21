@@ -80,11 +80,11 @@ const LoginSection = () => {
       {contextHolder}
       <div className="w-[100%] bg-white rounded-2xl text-center flex  flex-col items-center py-[2rem] px-[3rem]  lg:w-[45%] ">
         <div className="flex-grow w-full">
-          <p className="text-lg font-medium mb-7">Nexmedis</p>
+          <p className="text-lg mb-20 font-medium md:mb-7">Nexmedis</p>
           <h2 className="text-3xl font-semibold mb-3 lg:text-2xl xl:text-3xl ">
             Welcome back!
           </h2>
-          <p className="mb-7 text-md lg:text-sm xl:text-md">
+          <p className="mb-20  text-md md:mb-7 lg:text-sm xl:text-md">
             Please enter your details
           </p>
           <form method="post">

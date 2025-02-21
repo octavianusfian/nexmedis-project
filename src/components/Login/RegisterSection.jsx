@@ -80,11 +80,11 @@ const RegisterSection = () => {
       {contextHolder}
       <div className="w-[100%] bg-white rounded-2xl text-center flex  flex-col items-center py-[1.5rem] px-[2rem] lg:py-[1.5rem] lg:px-[2.5rem]  lg:w-[45%] ">
         <div className="flex-grow w-full">
-          <p className="text-lg font-medium mb-3 xl:mb-7">Nexmedis</p>
+          <p className="text-lg font-medium mb-20 md:mb-7">Nexmedis</p>
           <h2 className="text-2xl font-semibold mb-1 lg:text-xl xl:text-2xl xl:mb-3">
             Welcome Member!
           </h2>
-          <p className="mb-3 text-md lg:text-sm xl:text-md xl:mb-7">
+          <p className="mb-20 text-md lg:text-sm xl:text-md md:mb-7">
             Please enter your details
           </p>
           <form method="post">

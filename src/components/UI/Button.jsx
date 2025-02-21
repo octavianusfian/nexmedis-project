@@ -12,6 +12,7 @@ const Button = ({
   disabled,
   onClick,
   to,
+  style,
   ...restProps
 }) => {
   const navigate = useNavigate();
@@ -23,6 +24,7 @@ const Button = ({
       style={{
         width: width,
         backgroundColor: loading || disabled ? "[#E9E9E9]" : "black",
+        ...style,
       }}
       className={`rounded-2xl mb-3 
        text-white  py-2 px-5 font-semibold cursor-${
